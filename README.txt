@@ -10,7 +10,7 @@ Linux   - Run the shell script followed by build
 ex.    ./gradlew build   
 
 
-This will pull down all the dependencies needed for the Selenium tests. (OVER 40 MB. DONT BUILD IN REPO. COPY IT SOMEHWHERE ELSE ON YOUR MACHINE)
+This will pull down all the dependencies needed for the Selenium tests. 
 
 ----------
 How to run
