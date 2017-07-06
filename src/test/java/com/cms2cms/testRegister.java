@@ -347,7 +347,39 @@ public class testRegister
             Assert.assertFalse(true);
         }
     }
-
+    
+    @Test
+    public void testRegisterTestFacebook()
+    {
+        driver.navigate().to(prop.getProperty("url"));
+        
+        driver.findElement(By.linkText("Facebook")).click();
+        
+        try
+        {
+            Assert.assertTrue(driver.findElement(By.xpath("//button[@value='1']")).isDisplayed());
+        } catch (NoSuchElementException nsee)
+        {
+            Assert.assertFalse(true);
+        }
+    }
+    
+    @Test
+    public void testRegisterTestGooglePlus()
+    {
+        driver.navigate().to(prop.getProperty("url"));
+        
+        driver.findElement(By.linkText("Google Plus")).click();
+        
+        try
+        {
+            Assert.assertTrue(driver.findElement(By.id("headingText")).isDisplayed());
+        } catch (NoSuchElementException nsee)
+        {
+            Assert.assertFalse(true);
+        }
+    }
+    
     @AfterClass
     public static void tearDown()
     {
