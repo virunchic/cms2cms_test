@@ -6,7 +6,7 @@ repositories
 
 apply plugin: "java"
 apply plugin: "application"
-mainClassName = "com.wv.vf.tests.main.RunTests"
+mainClassName = "com.cms2cms.tests.main.RunTests"
 
 dependencies
 {
@@ -42,5 +42,5 @@ test {
 jar
 {
 
-	manifest.attributes "Main-Class":"com.wv.vf.tests.main.RunTests"
+	manifest.attributes "Main-Class":"com.cms2cms.tests.main.RunTests"
 }
